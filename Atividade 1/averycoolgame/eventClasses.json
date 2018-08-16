@@ -1,0 +1,95 @@
+[
+  {
+    "name":"Treasure Chest",
+    "states":[
+      {
+        "conditions":[
+          
+        ],
+        "sprite":{
+          "name":"sys/!$chest-opengameart-Blarumyrran.png",
+          "spriteIndex":0,
+          "dir":0,
+          "step":1
+        },
+        "height":1,
+        "affixDirection":true,
+        "trigger":1,
+        "animationType":0,
+        "runOnceThenIncrementState":true,
+        "cmds":[
+          {
+            "jsonClass":"AddRemoveItem",
+            "add":true,
+            "itemId":{
+              "jsonClass":"IntParameter",
+              "constant":0,
+              "valueTypeId":1,
+              "localVariable":"itemId",
+              "globalVariable":""
+            },
+            "quantity":{
+              "jsonClass":"IntParameter",
+              "constant":1,
+              "valueTypeId":0,
+              "localVariable":"",
+              "globalVariable":""
+            }
+          },
+          {
+            "jsonClass":"ShowText",
+            "lines":[
+              "Received \\J[getItemName(itemId)]."
+            ],
+            "useCharacterFace":false,
+            "characterId":0
+          }
+        ]
+      },
+      {
+        "conditions":[
+          
+        ],
+        "sprite":{
+          "name":"sys/!$chest-opengameart-Blarumyrran.png",
+          "spriteIndex":0,
+          "dir":3,
+          "step":1
+        },
+        "height":1,
+        "affixDirection":true,
+        "trigger":1,
+        "animationType":0,
+        "runOnceThenIncrementState":false,
+        "cmds":[
+          {
+            "jsonClass":"ShowText",
+            "lines":[
+              "It's empty."
+            ],
+            "useCharacterFace":false,
+            "characterId":0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name":"",
+    "states":[
+      {
+        "conditions":[
+          
+        ],
+        "height":0,
+        "affixDirection":false,
+        "trigger":1,
+        "animationType":0,
+        "runOnceThenIncrementState":false,
+        "cmds":[
+          
+        ]
+      }
+    ]
+  }
+]

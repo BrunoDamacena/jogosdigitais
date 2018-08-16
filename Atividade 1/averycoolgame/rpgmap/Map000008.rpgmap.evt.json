@@ -1,0 +1,37 @@
+{
+  "events":[
+    {
+      "id":1,
+      "name":"Exit Forbidden Forest",
+      "x":16.5,
+      "y":19.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000001.rpgmap",
+                "x":25.5,
+                "y":6.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}

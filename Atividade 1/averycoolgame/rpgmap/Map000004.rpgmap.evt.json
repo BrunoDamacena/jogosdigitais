@@ -1,0 +1,292 @@
+{
+  "events":[
+    {
+      "id":1,
+      "name":"Exit Forbidden Forest",
+      "x":16.5,
+      "y":19.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"Teleport",
+              "loc":{
+                "map":"Map000001.rpgmap",
+                "x":25.5,
+                "y":6.5
+              },
+              "transitionId":1
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":2,
+      "name":"Save Princess",
+      "x":29.5,
+      "y":6.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/$vx_chara09_f.png",
+            "spriteIndex":0,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":0,
+          "runOnceThenIncrementState":true,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Oh, you save me! My hero!"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Please, take me home!"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "To the plaaaaaace",
+                "I belooooong!"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "West Virginiaaaa",
+                "Mountain mommaaaaa"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "I'm sorry, is the Fallout 76 hype...",
+                "Please, let's go"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"SetGlobalInt",
+              "key":"savedPrincess",
+              "operatorId":0,
+              "value1":{
+                "jsonClass":"IntParameter",
+                "constant":1,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            },
+            {
+              "jsonClass":"SetGlobalInt",
+              "key":"returnedPrincess",
+              "operatorId":0,
+              "value1":{
+                "jsonClass":"IntParameter",
+                "constant":0,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "sprite":{
+            "name":"sys/$vx_chara09_f.png",
+            "spriteIndex":0,
+            "dir":0,
+            "step":1
+          },
+          "height":1,
+          "affixDirection":false,
+          "trigger":1,
+          "animationType":1,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "Let's go!"
+              ],
+              "customFace":{
+                "faceset":"sys/mackie/face_m01a_1.png",
+                "faceX":2,
+                "faceY":1
+              },
+              "useCharacterFace":false,
+              "characterId":0
+            }
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":3,
+      "name":"Fight Forest 1",
+      "x":19.5,
+      "y":16.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":true,
+          "cmds":[
+            {
+              "jsonClass":"StartBattle",
+              "encounterId":{
+                "jsonClass":"IntParameter",
+                "constant":0,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":0,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    },
+    {
+      "id":4,
+      "name":"Fight Forest 2",
+      "x":15.5,
+      "y":13.5,
+      "states":[
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":2,
+          "animationType":0,
+          "runOnceThenIncrementState":true,
+          "cmds":[
+            {
+              "jsonClass":"ShowText",
+              "lines":[
+                "You will never get the princess back!"
+              ],
+              "useCharacterFace":false,
+              "characterId":0
+            },
+            {
+              "jsonClass":"StartBattle",
+              "encounterId":{
+                "jsonClass":"IntParameter",
+                "constant":1,
+                "valueTypeId":0,
+                "localVariable":"",
+                "globalVariable":""
+              }
+            }
+          ]
+        },
+        {
+          "conditions":[
+            
+          ],
+          "height":0,
+          "affixDirection":false,
+          "trigger":0,
+          "animationType":0,
+          "runOnceThenIncrementState":false,
+          "cmds":[
+            
+          ]
+        }
+      ],
+      "eventClassId":-1,
+      "params":[
+        
+      ]
+    }
+  ]
+}
